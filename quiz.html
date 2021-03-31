@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Belmont Voter Guide</title>
+    <link rel="stylesheet" href="project.css">
+    <script src="project.js"></script>
+  </head>
+  <body onload="hasPrecinct()">
+    <h1 id="hi">Guide To The April 6th Ballot</h1>
+    <h2>By: Rit Garg</h2>
+      <p>Welcome to your Belmont Voter Guide to the April 6th ballot! Here, you can find information on the positions up for grabs, the candidates for those positions, and what powers people in these positions have, as well as information regarding the Questions on the ballot, organized by Position Name/Question Number as written on the ballots, then Precinct.<br>Before you can access the Guide, we'll need your precinct number.<br><br>Which precinct are you a part of?<br><span>Once you have selected your precinct, click <a id="home" href="quiz.html" onclick="hasPrecinct()">here</a> to head to the homepage.</span></p>
+      <ul id="dotless">
+        <li><button id="precinct1" onClick="setPrecinct(this.id)">Precinct 1</button></li>
+        <li><button id="precinct2" onClick="setPrecinct(this.id)">Precinct 2</button></li>
+        <li><button id="precinct3" onClick="setPrecinct(this.id)">Precinct 3</button></li>
+        <li><button id="precinct4" onClick="setPrecinct(this.id)">Precinct 4</button></li>
+        <li><button id="precinct5" onClick="setPrecinct(this.id)">Precinct 5</button></li>
+        <li><button id="precinct6" onClick="setPrecinct(this.id)">Precinct 6</button></li>
+        <li><button id="precinct7" onClick="setPrecinct(this.id)">Precinct 7</button></li>
+        <li><button id="precinct8" onClick="setPrecinct(this.id)">Precinct 8</button></li>
+        <li><button id="precinct0" onClick="setPrecinct(this.id)">I don't know</button></li>
+      </ul>
+  </body>
+</html>

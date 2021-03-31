@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Precinct Guide</title>
+    <link rel="stylesheet" href="project.css">
+    <script src="project.js"></script>
+  </head>
+  <body onload = "isolatePrecinct()">
+    <div id = "p1">
+      <h2>Your polling location is in the Belmont Public Library Assembly Room, at 336 Concord Avenue.</h2>
+      <img class = "map" src = "p1polls.png">
+    </div>
+    <div id = "p2">
+      <h2>Your polling location is in the Belmont Town Hall Selectmen's Meeting Room, at 455 Concord Avenue.</h2>
+      <img class = "map" src = "p2polls.png">
+    </div>
+    <div id = "p3">
+      <h2>Your polling location is in the Beech Street Center, at 266 Beech Street.</h2>
+      <img class = "map" src = "p3polls.png">
+    </div>
+    <div id = "p4">
+      <h2>Your polling location is in the Daniel Butler School, at 90 White Street.</h2>
+      <img class = "map" src = "p4polls.png">
+    </div>
+    <div id = "p5">
+      <h2>Your polling location is in the Beech Street Center, at 266 Beech Street.</h2>
+      <img class = "map" src = "p5polls.png">
+    </div>
+    <div id = "p6">
+      <h2>Your polling location is in the Belmont Fire Headquarters, at 299 Trapel Road.</h2>
+      <img class = "map" src = "p6polls.png">
+    </div>
+    <div id = "p7">
+      <h2>Your polling location is in the Buirbank School Gym, at 266 School Street.</h2>
+      <img class = "map" src = "p7polls.png">
+    </div>
+    <div id = "p8">
+      <h2>Your polling location is in the Winn Brook School Gym, at 97 Waterhouse Street. <em>Note: you must enter through the Cross Street entrance.</em></h2>
+      <img class = "map" src = "p8polls.png">
+    </div>
+    <p><br></p>
+    <button id = "to_home">Click here to go to the home page.</button>
+    <script>
+      document.getElementById("to_home").onclick = function () {
+        location.href = "home.html";
+      };
+    </script>
+  </body>
+</html>

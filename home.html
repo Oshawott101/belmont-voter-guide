@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Belmont Voter Guide</title>
+    <link rel="stylesheet" href="project.css">
+    <script src="project.js"></script>
+  </head>
+  <body onload="isolatep0()">
+    <h1>Guide To The April 6th Ballot</h1>
+    <h2>By: Rit Garg</h2>
+    <div id = "p1-8">
+      <p>Feel free to explore!</p>
+      <ul>
+        <li><a href="moderator.html">Moderator</a></li>
+        <li><a href="select_board.html">Member of Select Board</a></li>
+        <li><a href="assessors.html">Board of Assesors</a></li>
+        <li><a href="cemetery.html">Board of Cemetery Commissioners</a></li>
+        <li><a href="health.html">Board of Health</a></li>
+        <li><a href="housing.html">Member of Housing Authority</a></li>
+        <li><a href="library.html">Trustees of the Public Library</a></li>
+        <li><a href="school.html">Members of the School Commitee</a></li>
+        <li><a href="town_meeting.html">Town Meeting Members</a></li>
+        <li><a href="question.html">Question 1</a></li>
+      </ul>
+      <p>Unsure where to go to vote? Click <a href = "locations.html">here</a> to find out your polling locations.</p>
+    </div>
+    <div id = "p0">
+      <p>Unsure of what Precinct you are in? Click <a href="precincts.html">here</a>.</p>
+      <button id="quiz">Click here to take the quiz again.</button>
+      <script>
+        document.getElementById("quiz").onclick = function () {
+          location.href = "quiz.html";
+        };
+      </script>
+    </div>
+  </body>
+</html>
