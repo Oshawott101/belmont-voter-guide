@@ -1,7 +1,7 @@
 var precinct = sessionStorage.getItem("precinct");
 var executed = sessionStorage.getItem("executed");
 var setPrecinct = function(button_id) {
-  if (executed === null) {
+  if (executed !== null) {
     executed = false;
   }
   if (executed !== true) {
@@ -31,10 +31,6 @@ var setPrecinct = function(button_id) {
     else if (button_id == "precinct8") {
       precinct = 8;
     }
-    else if (button_id == "precinct0") {
-      precinct = 0;
-      executed = false;
-    }
     else {
       alert("That input did not work. Please try again.");
     }
@@ -45,12 +41,12 @@ var setPrecinct = function(button_id) {
 function confirmvalues() {
   document.getElementById("hi").innerHTML = "Precinct: " + precinct + " Executed: " + executed;
 }
+function executedFalse() {
+  sessionStorage.setItem("executed", false);
+}
 function hasPrecinct() {
-  if(precinct !== null) {
-    document.getElementById("home").href = "home.html";
-  }
-  if(executed !== true && precinct < 1) {
-    document.getElementById("precinct0").style.display = "none";
+  if(executed !== null) {
+    document.getElementById("hidep0").style.display = "none";
   }
 }
 /*function precinctQuiz() {
@@ -138,7 +134,7 @@ function isolatePrecinct() {
     document.getElementById("empty_seat").style.display = "inline";
   }
 }
-function isolatep0() {
+/*function isolatep0() {
   if (precinct == 0) {
     document.getElementById("p0").style.display = "inline";
     document.getElementById("p1-8").style.display = "none";
@@ -147,4 +143,4 @@ function isolatep0() {
     document.getElementById("p1-8").style.display = "inline";
     document.getElementById("p0").style.display = "none";
   }
-}
+}*/

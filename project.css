@@ -1,9 +1,45 @@
 li {
   margin: 25px 0 7.5px;
+  color: #ffafff;
+  font-size: 18px;
+  background-color: #00006e;
 }
 .home {
   background: url("town_hall.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.hasALink {
+  background-color: transparent;
+}
+.cemetery {
+  background: url("cemetery.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.housing {
+  background: url("housing.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.library {
+  background: url("library.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.highs {
+  background: url("school.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 #p0, #p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p1-8, #empty_seat, #vanish {
@@ -14,4 +50,82 @@ img {
 }
 #dotless {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 18px;
+  color: crimson;
+  background-color: springgreen;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.cursive {
+  font-family: cursive;
+}
+figcaption {
+  color: maroon;
+  font-family: cursive;
+  font-size: 18px;
+  background: mediumseagreen;
+}
+a {
+  color: ivory;
+  font-family: "Papyrus", fantasy;
+  text-decoration: none;
+  background-color: deepskyblue;
+  font-weight: bold;
+}
+a:hover {
+  color: fuchsia;
+  font-family: "Brush Script MT", cursive;
+  background-color: indigo;
+  font-size: 28px;
+}
+.deactivate, .deactivate:hover {
+  color: transparent;
+  background-color: transparent;
+}
+button {
+  background-color: deepskyblue;
+  border: 1px darkcyan;
+  color: ivory;
+  margin: 5px;
+  font-family: "Papyrus", fantasy;
+  padding: 10px 21px;
+  text-align: center;
+  font-size: 18px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: indigo;
+  font-family: "Brush Script MT", cursive;
+  color: fuchsia;
+  font-size: 28px;
+  border-radius: 10px;
+}
+h1 {
+  color: darkorchid;
+  font-family: "Lucida Handwriting", cursive;
+  font-size: 36px;
+}
+h2 {
+  color: darkorchid;
+  font-size: 27px;
+}
+h3 {
+  color: darkorchid;
+  font-size: 21.06px;
+}
+h4 {
+  color: darkorchid;
+  font-size: 18px;
+}
+.smarttag {
+  background-color: gold;
+  color: inherit;
+}
+.hi {
+  font-family: "Lucida Handwriting", cursive;
 }
