@@ -45,7 +45,7 @@ function executedFalse() {
   sessionStorage.setItem("executed", false);
 }
 function hasPrecinct() {
-  if(executed !== null) {
+  if(executed === false) {
     document.getElementById("hidep0").style.display = "none";
   }
 }
